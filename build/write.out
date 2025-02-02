@@ -7,7 +7,7 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_0000029a002e60e0 .scope module, "write" "write" 2 3;
+S_0000019dc61360e0 .scope module, "write" "write" 2 3;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "memtoregw";
     .port_info 1 /INPUT 1 "memtoregw2";
@@ -17,44 +17,44 @@ S_0000029a002e60e0 .scope module, "write" "write" 2 3;
     .port_info 5 /INPUT 32 "aluoutw2";
     .port_info 6 /OUTPUT 32 "resultw";
     .port_info 7 /OUTPUT 32 "resultw2";
-o0000029a002e6fb8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
-v0000029a002e4c30_0 .net "aluoutw", 31 0, o0000029a002e6fb8;  0 drivers
-o0000029a002e7138 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
-v0000029a002e4cd0_0 .net "aluoutw2", 31 0, o0000029a002e7138;  0 drivers
-o0000029a002e7018 .functor BUFZ 1, C4<z>; HiZ drive
-v0000029a002e4d70_0 .net "memtoregw", 0 0, o0000029a002e7018;  0 drivers
-o0000029a002e7198 .functor BUFZ 1, C4<z>; HiZ drive
-v0000029a002e4e10_0 .net "memtoregw2", 0 0, o0000029a002e7198;  0 drivers
-o0000029a002e6fe8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
-v0000029a00330830_0 .net "readdataw", 31 0, o0000029a002e6fe8;  0 drivers
-o0000029a002e7168 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
-v0000029a003308d0_0 .net "readdataw2", 31 0, o0000029a002e7168;  0 drivers
-v0000029a00330970_0 .net "resultw", 31 0, L_0000029a00330e20;  1 drivers
-v0000029a00330ce0_0 .net "resultw2", 31 0, L_0000029a00331140;  1 drivers
-S_0000029a002e6300 .scope module, "muxwrite" "mux2" 2 8, 3 1 0, S_0000029a002e60e0;
+o0000019dc6136fb8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000019dc6134c30_0 .net "aluoutw", 31 0, o0000019dc6136fb8;  0 drivers
+o0000019dc6137138 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000019dc6134cd0_0 .net "aluoutw2", 31 0, o0000019dc6137138;  0 drivers
+o0000019dc6137018 .functor BUFZ 1, C4<z>; HiZ drive
+v0000019dc6134d70_0 .net "memtoregw", 0 0, o0000019dc6137018;  0 drivers
+o0000019dc6137198 .functor BUFZ 1, C4<z>; HiZ drive
+v0000019dc6134e10_0 .net "memtoregw2", 0 0, o0000019dc6137198;  0 drivers
+o0000019dc6136fe8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000019dc6180830_0 .net "readdataw", 31 0, o0000019dc6136fe8;  0 drivers
+o0000019dc6137168 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000019dc61808d0_0 .net "readdataw2", 31 0, o0000019dc6137168;  0 drivers
+v0000019dc6180970_0 .net "resultw", 31 0, L_0000019dc6181500;  1 drivers
+v0000019dc6180ba0_0 .net "resultw2", 31 0, L_0000019dc61816e0;  1 drivers
+S_0000019dc6136300 .scope module, "muxwrite" "mux2" 2 8, 3 1 0, S_0000019dc61360e0;
  .timescale 0 0;
     .port_info 0 /INPUT 32 "d0";
     .port_info 1 /INPUT 32 "d1";
     .port_info 2 /INPUT 1 "s";
     .port_info 3 /OUTPUT 32 "y";
-P_0000029a0029d0c0 .param/l "WIDTH" 0 3 1, +C4<00000000000000000000000000100000>;
-v0000029a002e6490_0 .net "d0", 31 0, o0000029a002e6fb8;  alias, 0 drivers
-v0000029a0029ba30_0 .net "d1", 31 0, o0000029a002e6fe8;  alias, 0 drivers
-v0000029a0029bad0_0 .net "s", 0 0, o0000029a002e7018;  alias, 0 drivers
-v0000029a0029bb70_0 .net "y", 31 0, L_0000029a00330e20;  alias, 1 drivers
-L_0000029a00330e20 .functor MUXZ 32, o0000029a002e6fb8, o0000029a002e6fe8, o0000029a002e7018, C4<>;
-S_0000029a0029bc10 .scope module, "muxwrite2" "mux2" 2 9, 3 1 0, S_0000029a002e60e0;
+P_0000019dc60ecf40 .param/l "WIDTH" 0 3 1, +C4<00000000000000000000000000100000>;
+v0000019dc6136490_0 .net "d0", 31 0, o0000019dc6136fb8;  alias, 0 drivers
+v0000019dc60eba30_0 .net "d1", 31 0, o0000019dc6136fe8;  alias, 0 drivers
+v0000019dc60ebad0_0 .net "s", 0 0, o0000019dc6137018;  alias, 0 drivers
+v0000019dc60ebb70_0 .net "y", 31 0, L_0000019dc6181500;  alias, 1 drivers
+L_0000019dc6181500 .functor MUXZ 32, o0000019dc6136fb8, o0000019dc6136fe8, o0000019dc6137018, C4<>;
+S_0000019dc60ebc10 .scope module, "muxwrite2" "mux2" 2 9, 3 1 0, S_0000019dc61360e0;
  .timescale 0 0;
     .port_info 0 /INPUT 32 "d0";
     .port_info 1 /INPUT 32 "d1";
     .port_info 2 /INPUT 1 "s";
     .port_info 3 /OUTPUT 32 "y";
-P_0000029a0029d140 .param/l "WIDTH" 0 3 1, +C4<00000000000000000000000000100000>;
-v0000029a0029bda0_0 .net "d0", 31 0, o0000029a002e7138;  alias, 0 drivers
-v0000029a0029be40_0 .net "d1", 31 0, o0000029a002e7168;  alias, 0 drivers
-v0000029a0029bee0_0 .net "s", 0 0, o0000029a002e7198;  alias, 0 drivers
-v0000029a002e4b90_0 .net "y", 31 0, L_0000029a00331140;  alias, 1 drivers
-L_0000029a00331140 .functor MUXZ 32, o0000029a002e7138, o0000029a002e7168, o0000029a002e7198, C4<>;
+P_0000019dc60ec880 .param/l "WIDTH" 0 3 1, +C4<00000000000000000000000000100000>;
+v0000019dc60ebda0_0 .net "d0", 31 0, o0000019dc6137138;  alias, 0 drivers
+v0000019dc60ebe40_0 .net "d1", 31 0, o0000019dc6137168;  alias, 0 drivers
+v0000019dc60ebee0_0 .net "s", 0 0, o0000019dc6137198;  alias, 0 drivers
+v0000019dc6134b90_0 .net "y", 31 0, L_0000019dc61816e0;  alias, 1 drivers
+L_0000019dc61816e0 .functor MUXZ 32, o0000019dc6137138, o0000019dc6137168, o0000019dc6137198, C4<>;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";

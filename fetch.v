@@ -41,14 +41,14 @@ module fetch(
     // FETCH - Cycle 1
     // Instr Mem, Adder
     mux6 #(32) pcmux(
-        .in0(pcplus4f), 
-        .in1(pcbranchd), 
-        .in2(signextd), 
-        .in3(signextd), 
-        .in4(signextd2), 
-        .in5(signextd2), 
-        .sel(muxselect), 
-        .out(pcnext)
+        .d0(pcplus4f), 
+        .d1(pcbranchd), 
+        .d2(signextd), 
+        .d3(signextd), 
+        .d4(signextd2), 
+        .d5(signextd2), 
+        .s(muxselect), 
+        .y(pcnext)
     );
 
     flopenr #(32) pcreg(
@@ -62,7 +62,7 @@ module fetch(
     adder pcadder(
         .a(branchtoinstr), 
         .b(32'h8), 
-        .sum(pcplus4f)
+        .cout(pcplus4f)
     );
 
     instrmem instructmem(
