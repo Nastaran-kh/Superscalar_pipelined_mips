@@ -1,0 +1,109 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000024995aa2ad0 .scope module, "pipefd" "pipefd" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "clrbp";
+    .port_info 2 /INPUT 1 "stalld";
+    .port_info 3 /INPUT 1 "stalld2";
+    .port_info 4 /INPUT 2 "pcsrcd";
+    .port_info 5 /INPUT 2 "pcsrcd2";
+    .port_info 6 /INPUT 32 "instrf";
+    .port_info 7 /INPUT 32 "instrf2";
+    .port_info 8 /INPUT 32 "pcplus4f";
+    .port_info 9 /INPUT 32 "pcf";
+    .port_info 10 /OUTPUT 32 "instrd";
+    .port_info 11 /OUTPUT 32 "instrd2";
+    .port_info 12 /OUTPUT 32 "pcplus4d";
+    .port_info 13 /OUTPUT 32 "pcd";
+L_0000024995ad59c0 .functor OR 1, L_0000024995b1ece0, L_0000024995b1f000, C4<0>, C4<0>;
+L_0000024995b1f9d0 .functor OR 1, L_0000024995ad59c0, L_0000024995b1e880, C4<0>, C4<0>;
+L_0000024995b1fa40 .functor OR 1, L_0000024995b1f9d0, L_0000024995b1f460, C4<0>, C4<0>;
+o0000024995ada168 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000024995b1fab0 .functor OR 1, L_0000024995b1fa40, o0000024995ada168, C4<0>, C4<0>;
+v0000024995aa2d50_0 .net *"_ivl_1", 0 0, L_0000024995b1ece0;  1 drivers
+v0000024995ad42e0_0 .net *"_ivl_11", 0 0, L_0000024995b1f460;  1 drivers
+v0000024995ad4380_0 .net *"_ivl_13", 0 0, L_0000024995b1fa40;  1 drivers
+v0000024995ad4420_0 .net *"_ivl_3", 0 0, L_0000024995b1f000;  1 drivers
+v0000024995ad44c0_0 .net *"_ivl_5", 0 0, L_0000024995ad59c0;  1 drivers
+v0000024995ad4560_0 .net *"_ivl_7", 0 0, L_0000024995b1e880;  1 drivers
+v0000024995ad4600_0 .net *"_ivl_9", 0 0, L_0000024995b1f9d0;  1 drivers
+o0000024995ada108 .functor BUFZ 1, C4<z>; HiZ drive
+v0000024995ad46a0_0 .net "clk", 0 0, o0000024995ada108;  0 drivers
+v0000024995b1f280_0 .net "clr", 0 0, L_0000024995b1fab0;  1 drivers
+v0000024995b1e9c0_0 .net "clrbp", 0 0, o0000024995ada168;  0 drivers
+v0000024995b1f0a0_0 .var "instrd", 31 0;
+v0000024995b1f640_0 .var "instrd2", 31 0;
+o0000024995ada1f8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000024995b1f1e0_0 .net "instrf", 31 0, o0000024995ada1f8;  0 drivers
+o0000024995ada228 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000024995b1eba0_0 .net "instrf2", 31 0, o0000024995ada228;  0 drivers
+v0000024995b1f780_0 .var "pcd", 31 0;
+o0000024995ada288 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000024995b1ec40_0 .net "pcf", 31 0, o0000024995ada288;  0 drivers
+v0000024995b1f5a0_0 .var "pcplus4d", 31 0;
+o0000024995ada2e8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000024995b1f320_0 .net "pcplus4f", 31 0, o0000024995ada2e8;  0 drivers
+o0000024995ada318 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000024995b1f3c0_0 .net "pcsrcd", 1 0, o0000024995ada318;  0 drivers
+o0000024995ada348 .functor BUFZ 2, C4<zz>; HiZ drive
+v0000024995b1ea60_0 .net "pcsrcd2", 1 0, o0000024995ada348;  0 drivers
+o0000024995ada378 .functor BUFZ 1, C4<z>; HiZ drive
+v0000024995b1f140_0 .net "stalld", 0 0, o0000024995ada378;  0 drivers
+o0000024995ada3a8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000024995b1ee20_0 .net "stalld2", 0 0, o0000024995ada3a8;  0 drivers
+E_0000024995ac5fb0 .event posedge, v0000024995ad46a0_0;
+L_0000024995b1ece0 .part o0000024995ada348, 1, 1;
+L_0000024995b1f000 .part o0000024995ada348, 0, 1;
+L_0000024995b1e880 .part o0000024995ada318, 1, 1;
+L_0000024995b1f460 .part o0000024995ada318, 0, 1;
+    .scope S_0000024995aa2ad0;
+T_0 ;
+    %wait E_0000024995ac5fb0;
+    %load/vec4 v0000024995b1f280_0;
+    %load/vec4 v0000024995b1f140_0;
+    %nor/r;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000024995b1f5a0_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000024995b1f0a0_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000024995b1f640_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000024995b1f780_0, 0, 32;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000024995b1f140_0;
+    %nor/r;
+    %load/vec4 v0000024995b1f280_0;
+    %nor/r;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v0000024995b1f320_0;
+    %store/vec4 v0000024995b1f5a0_0, 0, 32;
+    %load/vec4 v0000024995b1f1e0_0;
+    %store/vec4 v0000024995b1f0a0_0, 0, 32;
+    %load/vec4 v0000024995b1eba0_0;
+    %store/vec4 v0000024995b1f640_0, 0, 32;
+    %load/vec4 v0000024995b1ec40_0;
+    %store/vec4 v0000024995b1f780_0, 0, 32;
+T_0.2 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "pipefd.v";

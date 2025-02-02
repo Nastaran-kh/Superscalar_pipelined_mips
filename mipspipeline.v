@@ -1,3 +1,14 @@
+`include "pipelinecontrol.v"
+`include "hazardcontroller.v"
+`include "fetch.v"
+`include "pipefd.v"
+`include "decode.v"
+`include "pipede.v"
+`include "execute.v"
+`include "pipeem.v"
+`include "memory.v"
+`include "pipemw.v"
+`include "write.v"
 module mipspipeline(clk, reset, memwritem, aluoutm, writedatam);
   input clk, reset;
   output memwritem;

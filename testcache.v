@@ -1,3 +1,4 @@
+`include "memory_system.v"
 module testcache();
   reg         clk;
   reg         re, we, we2, we3;

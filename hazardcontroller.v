@@ -4,7 +4,7 @@ module hazardcontroller(clk,rsd,rsd2,rtd,rtd2,rse,rse2,rte,rte2,branchd,branchd2
                         memwritem,memwritem2,memwritee,memwritee2,hit,hit2,miss,miss2,dirty,dirty2,we2,we2_2,we3,we3_2,multen,multen2,multready,multready2,swstalle,lwstalle,branchstalld);
 
   input             clk,branchd,regwritee,regwritem,regwritew,memtorege,memtoregm,hit,miss,dirty,memwritem,memwritee,multen,multready;
-  input             clk,branchd2,regwritee2,regwritem2,regwritew2,memtorege2,memtoregm2,hit2,miss2,dirty2,memwritem2,memwritee2,multen2,multready2;
+  input             branchd2,regwritee2,regwritem2,regwritew2,memtorege2,memtoregm2,hit2,miss2,dirty2,memwritem2,memwritee2,multen2,multready2;
   input   [4:0]     rsd,rtd,rse,rte,writerege,writeregm,writeregw;
   input   [4:0]     rsd2,rtd2,rse2,rte2,writerege2,writeregm2,writeregw2;
   output reg        stallf,stalld,stalle,stallm,stallw,flushe,we2,we3;

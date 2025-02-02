@@ -1,3 +1,9 @@
+`include "regfile.v"
+`include "signext.v"
+`include "sl2.v"
+`include "sl226.v"
+`include "adder.v"
+`include "mux3.v"
 module decode(clk, regwritew,regwritew2, forwardad,forwardad2, forwardbd,forwardbd2, instrd,instrd2, resultw,resultw2, writeregw, writeregw2,aluoutm, aluoutm2,pcplus4d,pcplus4d2,
               pcbranchd, pcbranchd2,equald,equald2, mux1out, mux1out2,mux2out, mux2out2,rsd,rsd2, rtd, rtd2,rdd,rdd2, signimmd,signimmd2,signextd,signextd2);
                

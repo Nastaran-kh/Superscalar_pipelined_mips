@@ -1,3 +1,9 @@
+`include "mux2.v"
+`include "mux5.v"
+`include "alu.v"
+`include "multiplier.v"
+`include "mux6.v"
+
 module execute(clk, signe,signe2, rse,rse2, rte,rte2, rde,rde2,signimme,signimme2,mux1after,mux1after2,mux2after,mux2after2,resultw,resultw2,aluoutm,aluoutm2,
 	       alucontrole,alucontrole2,alusrce,alusrce2,multsele,multsele2,regdste,regdste2,forwardae,forwardae2,forwardbe,forwardbe2,writerege,writerege2,
 	       solutione,solutione2,writedatae,writedatae2,multready,multready2);

@@ -1,3 +1,4 @@
+`include "mipspipeline.v"
 module mips_test3();
   reg clk;
   reg reset;

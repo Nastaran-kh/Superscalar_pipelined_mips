@@ -1,3 +1,5 @@
+`include "mux2.v"
+
 module write(memtoregw,memtoregw2,readdataw,readdataw2,aluoutw,aluoutw2,resultw,resultw2);
   input memtoregw,memtoregw2;
   input  [31:0] readdataw,readdataw2,aluoutw,aluoutw2;

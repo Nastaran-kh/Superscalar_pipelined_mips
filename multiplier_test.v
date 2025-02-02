@@ -1,3 +1,4 @@
+`include "multiplier.v"
 module multiplier_test();
    reg         clk, sign, enable;
    reg  [31:0] multi_1, multi_2;

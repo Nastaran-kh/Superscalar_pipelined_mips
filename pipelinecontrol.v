@@ -1,3 +1,5 @@
+`include "pipelinedec.v"
+`include "aludec.v"
 module pipelinecontrol(instrd, equald, memtoregd, regwrited, memwrited, alucontrold, alusrcd, regdstd, pcsrcd, branchd, bned, signd, multseld);
   input [31:0] instrd;
   input equald;

@@ -1,0 +1,26 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001ab9f8829c0 .scope module, "sl226" "sl226" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 26 "a";
+    .port_info 1 /OUTPUT 26 "y";
+v000001ab9f882b50_0 .net *"_ivl_1", 23 0, L_000001ab9f7fdc60;  1 drivers
+L_000001ab9f8fbfc8 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v000001ab9f882bf0_0 .net/2u *"_ivl_2", 1 0, L_000001ab9f8fbfc8;  1 drivers
+o000001ab9f8b6bb8 .functor BUFZ 26, C4<zzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000001ab9f882c90_0 .net "a", 25 0, o000001ab9f8b6bb8;  0 drivers
+v000001ab9f882d30_0 .net "y", 25 0, L_000001ab9f7fdd00;  1 drivers
+L_000001ab9f7fdc60 .part o000001ab9f8b6bb8, 0, 24;
+L_000001ab9f7fdd00 .concat [ 2 24 0 0], L_000001ab9f8fbfc8, L_000001ab9f7fdc60;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "sl226.v";

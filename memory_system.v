@@ -1,3 +1,5 @@
+`include "cache_wb.v"
+`include "mainmem.v"
 module memory_system(clk, re,re2, we,we_2, we2, we2_2,we3,we3_2, address, address2,writedata, writedata2,readdatacache,readdatacache2, hit,hit2, miss,miss2, dirty);
   input         clk, we,we_2, we2,we2_2, we3, we3_2,re,re2;
   input [31:0]  address,address2, writedata,writedata2;
